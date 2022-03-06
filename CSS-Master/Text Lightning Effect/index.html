@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+         font-size: 62.5%;
+        }
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .main_div{
+            width: 100vw;height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #222f3e;
+        }
+        .center_div{
+            width: 50%;
+            height: auto;
+            background-color: #fff;
+        }
+        /* .center_div ul{
+            
+        } */
+        li{
+           display: inline;
+           font-size: 5rem; 
+           margin-left: 1rem;
+           color: #576574;
+           animation: light 1.3s linear infinite;
+        }
+        @-webkit-keyframes light{
+            0%{
+                /* transform: translate(2px,0%); */
+                color: #576574;
+                text-shadow: none ;
+
+
+            }
+            90%{
+                /* transform: translate(px,0%); */
+
+                color: #576574;
+                text-shadow: none ;
+
+
+            }
+            100%{
+                color: #f1c40f;
+                text-shadow: 0 0 1rem #d35400,0 0 7rem #d35400 ;
+
+            }
+        }
+        .center ul li:nth-child(1){
+            animation-delay: 0s;
+        }
+        .center ul li:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        .center ul li:nth-child(3){
+            animation-delay: 0.4s;
+        }
+        .center ul li:nth-child(4){
+            animation-delay: 0.6s;
+        }
+        .center ul li:nth-child(5){
+            animation-delay: 0.8s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="center">
+            <ul type=none>
+                <li>S</li>
+                <li>A</li>
+                <li>H</li>
+                <li>I</li>
+                <li>L</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

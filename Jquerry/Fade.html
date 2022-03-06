@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <!-- selector:
+    $(selector).fadeIn(speed,callback);
+    $(selector).fadeOut(speed,callback); -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .centerdiv{
+           
+            padding-left: 50vw;
+        }
+        #firstdiv1{
+            height: 100px;
+            width:100px;
+            background-color: tomato;
+            border: 2px solid black;
+        }
+        #firstdiv2{
+            height: 100px;
+            width:100px;
+            background-color: rgb(143, 202, 160);
+            border: 2px solid black;
+        }
+        #firstdiv3{
+            height: 100px;
+            width:100px;
+            background-color: rgb(104, 54, 161);
+            border: 2px solid black;
+        }
+    </style>
+
+    <title>Fade Effect</title>
+</head>
+<body>
+    <h2 style="text-align: center; color: yellow;">FadeIn and FadeOut effect</h2>
+    <div class="centerdiv">
+        <button id="btnfadeout">Fadeout</button>
+        <button id="btnfadein">FadeIn</button>
+        <button id="btntoggle">FadeToggle</button>
+
+        <br><br>
+<div id="firstdiv1"></div><br>
+<div id="firstdiv2"></div><br>
+<div id="firstdiv3"></div><br><br><br>
+
+    </div>
+<script>
+    $(document).ready(function(){
+$('#btnfadeout').click(function(){
+$('#firstdiv1').fadeOut('slow');
+$('#firstdiv2').fadeOut(2000);
+$('#firstdiv3').fadeOut(3000);
+});
+$('#btnfadein').click(function(){
+    $('#firstdiv1').fadeIn('slow');
+$('#firstdiv2').fadeIn(2000);
+$('#firstdiv3').fadeIn(3000);
+});
+$('#btntoggle').click(function(){
+    $('#firstdiv1').fadeToggle('slow');
+$('#firstdiv2').fadeToggle(2000);
+$('#firstdiv3').fadeToggle(3000);
+});
+    });
+</script>
+</body>
+</html>

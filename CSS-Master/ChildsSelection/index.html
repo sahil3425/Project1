@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .main_header{
+            width: 100vw;height: 100vh;display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #38ada9;
+            color: black;
+        }
+        .main_header *{
+            padding-top:5px;
+            font-size: xx-large;
+            
+        }
+        li:first-child{
+            color:aqua
+        }
+        /* 2n for even */
+        li:nth-child(2n){
+            color: blue;
+        }
+        /* 2n+1 for odd */
+        li:last-child{
+            color: rgb(201, 126, 126);
+        }
+        li:nth-child(9){
+            color:rgb(2, 2, 49);
+        }
+        li:not(:nth-child(3)){
+            color:forestgreen
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main_header">
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Tenth</li>
+        </ul>
+    </div>
+</body>
+</html>

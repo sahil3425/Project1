@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link
+      href="https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  <style>
+      .container{
+          width: 60vw;
+          height: 70vh;
+         padding-left: 25px;
+          transform: translate(25vw,25vh);
+          background-color: blue;
+          border-radius: 30px;
+          display: flex;
+      }
+      .child-1{
+          width: 50%;
+          height: 100%;
+          text-align: center;
+          color: white;
+          box-shadow: 10px 0px 6px black; 
+          margin-top: 0%;
+      }
+      .child-1 .akr{
+          margin-top: 60%;
+          font-size: 20px;
+          font-weight: bolder;
+      }
+      .child-2{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+      }
+      .child-2 .p1{
+          border-bottom: 1px solid white;
+          color: white;
+      }
+      form{
+          height: 60%;
+      }
+      form img{
+          border-radius: 50%;
+      }
+     form i{
+         font-size: 10vw;
+     }
+     form input{
+         width: 70%;
+         border: 2px solid white;
+         background-color: blue;
+         color: white;
+         padding: 10px;
+         border-radius: 100px;
+         opacity: 1;
+     }
+     form .footer button{
+         background-color: navy;
+         margin-top: 10px;
+         color: white;
+         border: none;
+         border-radius: 25px;
+         padding: 2px 50px;
+     }
+     form .footer button p{
+         font-weight: bolder;
+         text-decoration: none;
+     }
+     .child-2 p{
+         color: white;
+     }
+     a{
+         text-decoration: none;
+         color: white;
+     }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-1">
+            <p class="lgn">LOGIN</p>
+            <p class="akr">AAKAR</p>
+        </div>
+        <div class="child-2">
+            <p class="p1">Top</p>
+            <form action="">
+                <img src="/forms/login.png" width="50%" alt="">
+                <div><br><input type="text" placeholder="Login id-" maxlength="20"></div><br>
+                  <div> <input type="text" placeholder="Password-"></div> 
+                  <div class="footer">
+                      <button><p>LOGIN</p>
+                          </button>
+                          <p style="text-decoration: none;">Forget Password?</p>
+                          <p>Don't have an account? <a href="">Sign up</a> </p>
+                  </div>
+                
+            </form>
+        </div>
+    </div>  
+</body>
+</html>

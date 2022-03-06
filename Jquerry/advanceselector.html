@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 50%; margin: auto; background-color: cadetblue; color: white; text-align: center; ">
+    <ol type="1" style="list-style: none;" id="thapa">
+    <li>index 0: Javascript</li>
+    <li>index 1: Angular</li>
+    <li>index 2: Bootstrap</li>
+    <li>index 3: Php</li>
+    </ol><br><br>
+    <ol type="1" style="list-style: none;" id="thapa2">
+        <li>index 0: Javascript</li>
+        <li>index 1: Angular</li>
+        <li>index 2: Bootstrap</li>
+        <li>index 3: Php</li>
+        </ol><br><br>
+
+    <button id="btn-id">Click me</button>
+</div>
+<script>
+    $(document).ready(function(){
+        $('*').css("background","green");
+        $("#btn-id").click(function(){
+              // $('*').css("color","black");
+             // $(this).css("border","10px solid white");
+            //$('[type]').hide("slow");
+           // $('li:even').css("color","blue");
+           //$('li:first-child').css("color","red");
+           // $('#thapa li:last-child').css("color","red");
+          //  $('#thapa li:nth-child(3) ').css("color","red");
+        $('#thapa li:nth-last-child(3) ').css("color","red");
+
+
+        });
+
+    });
+</script>
+</body>
+</html>

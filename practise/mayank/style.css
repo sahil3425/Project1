@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  background-color: #e5d7c2;
+}
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header1-child2 {
+  display: inline-flex;
+  width: 10vw;
+  height: 30px;
+  background-color: #0b1ca8;
+  text-align: center;
+  padding-top: 9px;
+  color: white;
+  justify-content: space-evenly;
+}
+.header1-child2 i {
+  font-size: large;
+}
+.header1-child1 {
+  display: inline;
+  width: 25vw;
+  height: 30px;
+  border-radius: 0px 20px 20px 10px;
+  background-color: #0b1ca8;
+  text-align: center;
+  padding-top: 9px;
+  color: white;
+}
+.hr1 {
+  border: 1px dashed #6b6454;
+  margin-top: 0%;
+  width: 65.8%;
+  margin-left: 24.3%;
+}
+.header2 {
+  height: 20px;
+}
+.header3 {
+  height: 20px;
+}
+.header2 ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header2 ul li {
+  display: inline-flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #112129;
+  /* // float: right; */
+  align-items: center;
+}
+.header2 ul li i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.header3 {
+  height: 50px;
+  display: block;
+  text-align: center;
+  background-color: #a4b3c0;
+}
+.header3 ul {
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header3 ul li {
+  display: inline;
+  font-size: large;
+  font-weight: bold;
+  color: #112129;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.header3 ul li p {
+  font-weight: bolder;
+}
+.header4 {
+  height: 40px;
+  margin-top: 2px;
+}
+.header4 ul {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2px;
+}
+.header4 ul li {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #112129;
+}
+main {
+  margin: 10px;
+  text-align: center;
+}
+.maindiv {
+  width: 90%;
+  height: 500px;
+  position: absolute;
+  /* left: 20%; */
+  display: block;
+  background-image: url(/mb.jpg);
+  background-size: 100% 100%;
+  transform: translate(5%);
+  box-shadow: 1px 2px 10px 5px white;
+  animation: slider 9s infinite linear;
+  border-radius: 50px;
+}
+@keyframes slider {
+  0% {
+    background-image: url(/images/mb.jpg);
+    background-size: 100% 100%;
+  }
+  35% {
+    background-image: url(/images/IMG_4011.jpg);
+    background-size: 100% 100%;
+  }
+  75% {
+    background-image: url(/images/IMG_4012.jpg);
+    background-size: 100% 100%;
+  }
+  100% {
+    background-image: url(/images/mb.jpg);
+    background-size: 100% 100%;
+  }
+}
+main div {
+  height: 500px;
+}
+main {
+  /* height: 530px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main hr {
+  width: 90%;
+  margin-top: 20px;
+  color: #d3d3d3;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  /* height: 70vh; */
+  margin-left: 20px;
+  margin-right: 20px;
+  /* width: 95vw;; */
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+}
+.flex div {
+  display: inline-block;
+  text-align: center;
+  /* margin-left: 5px; */
+  padding: 10px;
+
+  /* width: 30%;
+  height: 90%; */
+}
+.flex div img {
+  width: 80%;
+  /* height: 80%; */
+  border-radius: 10px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+.mood_tracker {
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+.mood_tracker h2 {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  margin-left: 2px;
+}
+.mood_tracker hr {
+  width: 20%;
+  margin-left: 2px;
+
+  border: 3px solid #9f7dff;
+}
+.mood_tracker div {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 50vh;
+  box-shadow: 2px 2px 50px 10px white inset;
+  background-color: aquamarine;
+}
+.moody {
+  text-align: center;
+  padding: 10px;
+}
+.moody .flex1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.moody .flex1 div {
+  background-color: #e0f5f5;
+  display: inline-flex;
+  align-content: center;
+  border-radius: 30px;
+  justify-content: space-around;
+  width: 40vw;
+  height: 30vh;
+}
+.moody .flex1 div i {
+  font-size: 20vh;
+  color: black;
+  height: 70%;
+  display: inline;
+}
+
+.moody .flex1 div h4 {
+  display: inline;
+  font-size: larger;
+}
+.moody p {
+  font-size: larger;
+}
+.moody .sp {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.moody button {
+  border-radius: 48%;
+  background-color: #a0f9ff;
+  padding: 5px 30px;
+}
+.moody button p {
+  font-weight: lighter;
+}

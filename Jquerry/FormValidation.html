@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Form Validation</title>
+   
+</head>
+<body>
+    <div class="container">
+      <h2 style="text-align: center; text-transform: uppercase;">Simple Login Form</h2>
+      <form action="">
+          <div class="form-group">
+              <label for="username" >username:</label>
+              <input type="text" id="username" placeholder="Enter Name" name="username" autocomplete="off" class="form-control">
+              <div id="show_error"></div><br><br>
+              </div>
+              <div class="form-group">
+                <label for="pwd" style="font-weight: bolder;  font-size: larger;">password:&nbsp;</label><br>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" style="width: 30vw;border-radius: 5px; padding: 2px; height: 25px;">
+                
+              </div>
+         <div class="checkbox"><br>
+             <label for=""><input type="checkbox" name="remender">Remember me</label>
+
+         </div>
+      </form><br>
+      <button  id="submit" type="submit">submit</button>
+    </form><br>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.submit').click(function(){
+                var user=$('#username').val;
+                if(user==""){
+                    $('#show_error').html('**Fill All The Data');
+                    $('#show_error').css('color','red');
+
+
+
+                }
+            })
+
+        })
+    </script>
+</body>
+</html>

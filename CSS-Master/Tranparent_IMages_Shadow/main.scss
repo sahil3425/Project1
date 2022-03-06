@@ -1,0 +1,47 @@
+@import "mixing";
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.main_header{
+    @include flexprop;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    @include commoncode(0.8rem,uppercase);
+    // font-size: 8rem;
+    // text-transform: uppercase;
+    &:hover{
+color: black;
+text-shadow:1rem 1rem 1rem yellow;
+
+    }
+    &::after{
+        content: " Channel";
+    }
+}
+p{
+    @include commoncode(0.3rem,capitalize);
+    &:hover{
+        color:black;
+        text-shadow:1rem 1rem 1rem yellow;
+
+    }
+}
+img{
+    width: 50rem;
+    height: auto;
+    margin: 10rem 0;
+    transition: all 0.3s ease-in-out;
+    filter:drop-shadow(1rem 1rem 1rem grey);
+&:hover{
+    filter:drop-shadow(1rem 1rem 1rem yellow);
+}
+}

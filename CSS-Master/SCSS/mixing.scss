@@ -1,0 +1,14 @@
+
+@mixin flexprop { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+@mixin cmncode($let,$fnt) {
+    color:black;
+    letter-spacing: $let;
+    transition-duration: 1s;
+    font-size: $fnt;
+}

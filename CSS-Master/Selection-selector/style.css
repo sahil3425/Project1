@@ -1,0 +1,27 @@
+body{
+width: 100vw;
+height: 90vh;
+padding-top: 20vh;
+}
+div{
+    width: 30vw;
+    overflow: hidden;
+    text-align: center;
+}
+::selection{
+    background-color: yellowgreen;
+    color: wheat;
+}
+h2::selection{
+    background-color: black;
+    color: white;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    align-items: center;
+    width: 100vw;
+
+}
+

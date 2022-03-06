@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .center_div{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            background-color: #2f3542;
+            place-items: center;
+            color: #fff;
+        }
+        h1{
+            font-size: 4rem;
+            text-transform: uppercase;
+            position: relative;
+        }
+        h1::before{
+            content: "~Sahil_Rajput~";
+          color: #2ed573;
+           
+            left: 0;top: 0;
+            width: 100%;
+            position: absolute;
+            border-right: .4rem solid #2ed573;
+            -webkit-animation: slide 3s linear infinite;
+            overflow: hidden;
+        }
+        @keyframes slide {
+            0%{width: 0%;
+
+            }
+            50%{
+                width: 100%;
+            }
+            100%{
+width: 0%;
+            }
+            
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="center_div">
+        <h1>~Sahil_Rajput~</h1>
+    </div>
+</body>
+</html>

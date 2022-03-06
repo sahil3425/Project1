@@ -1,0 +1,18 @@
+:root{
+--sahil:white;
+--bg-color:#42a5F5;
+}
+div{
+    background-color: var(--bg-color);
+}
+h1{
+    color:var(--sahil);
+}
+h2{
+    --sahil:black;
+    color:var(--sahil);
+}
+h3{
+    
+    color:var(--sahil);
+}

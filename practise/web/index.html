@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Forms</title>
+    <style>
+        input:hover{
+outline: 1px solid #fd79a8;
+        }
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+   
+}
+.img{
+    width: 500px;
+    
+}
+.clickme{
+    color:#fff;
+    background-color:#fd79a8;
+}
+.clickme:hover{
+    
+    color:  #fd79a8;
+    background-color: #fff;
+    border: 1px solid #fd79a8;
+}
+
+    </style>
+</head>
+<body>
+    <section class="contact flex w-100 mt-3 " >
+        <h1 class=" text-center" id="cntct"> contact me</h1>
+        <div class=" flex w-100 mt-3 ">
+        <div class="container w-20 img d-inline">
+            <img src="/forms/login.png" style="width: 100% !important;" class="img-thumbnail" alt="">
+        </div>
+        <div class="container m-lg-auto w-50 d-inline">
+                        <form action=""></form>
+            <div class="from-group">
+                <label for="user1">Your Name: </label>
+                <input type="text" name="" id="user1" class="form-control " >
+            </div><br> 
+            <div class="from-group">
+                <label for="user2">Your Email: </label>
+                <input type="email" name="" id="user2" class="form-control " >
+            </div><br>
+            <div class="from-group">
+                <label for="Message">Message: </label>
+                <input type="Message" name="" id="user3" class="form-control " >
+            </div><br><br>
+            <div class="sendbtn text-center">
+                <button class="btn clickme" id='bn'>send</button>
+                <!-- <a href="#" class="btn"  onclick="popUp()">Send</a> -->
+            </div>
+            </form><br><br>
+           
+
+        </div></div>
+        <p class="text-center">Thank you for the time you spent with me . </p>
+    </section>
+    <script>
+var inpt1 = document.getElementById('user1');
+var inpt2 = document.getElementById('user2');
+var inpt3 = document.getElementById('user3');
+
+console.log(inpt1);
+       var button = document.getElementById('bn');
+       console.log(button);
+       button.addEventListener('click',function(){
+           if(inpt1.value===""||inpt2.value===""||inpt3.value==="")
+           swal("Error!", "Plz fill all the required field!", "error");
+       });
+    </script>
+</body>
+</html>

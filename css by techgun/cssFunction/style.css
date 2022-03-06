@@ -1,0 +1,21 @@
+:root{
+    --primary-color:teal;
+    --btn-color:blueviolet;
+    --tex-color:white;
+}
+body{
+    text-align: center;
+}
+#fun{
+    background-color:var(--primary-color) ;
+    height:200px;
+    display: inline-block;
+    width:calc(100% - 200px);
+}
+a{
+    padding: 10px 30px;
+    border-radius: 20px;
+    color:var( --tex-color);
+    background-color: var(--btn-color);
+    text-decoration: none;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Animation</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            position: relative;
+        }
+        .line{
+            width:30px;
+            height:3px;
+            margin-left: 70vw;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <button class="animate">Animate</button><br>
+    <div class="box"></div><br>
+    <button class="animate1" style="margin-left: 70vw;">Animate1</button><br>
+    <div class="line"></div>
+    <script>
+        $(document).ready(function(){
+$('.animate').click(function(){
+$('.box').animate({
+left:500
+});
+$('.box').animate({
+top:500
+});
+$('.box').animate({
+    top:500,
+left:0
+});
+$('.box').animate({
+    top:0,
+left:0
+});
+});
+
+$('.animate1').mouseenter(function(){
+    $('.line').animate({
+        width:60
+    });
+});
+    $('.animate1').mouseleave(function(){
+    $('.line').animate({
+        width:30
+    });
+    
+});
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>//https://sweetalert.js.org/guides/
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<style>
+    #pop{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
+    #pop1{
+        position: absolute;
+        left:50%;
+        top:30%;
+        transform: translate(-50%,-50%);
+    }
+</style>
+    <title>Alert Popup Box</title>
+</head>
+<body>
+    <button onclick="popUp()" id="pop">Click Me</button>
+    <button onclick="popUp1()" id="pop1">Click Me</button>
+
+    <script>
+        function popUp(){
+            swal("Verified", "Hi Sahil", "success");        }
+            function popUp1(){
+            swal("Non Verified ", "Sorry", "warning");  
+        //swal("Non Verified ", "Sorry", "error");       
+    }
+        $(document).ready(function(){
+            $().click(function(){
+
+            });
+
+        });
+    </script>
+</body>
+</html>

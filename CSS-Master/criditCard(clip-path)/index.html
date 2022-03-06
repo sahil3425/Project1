@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,300&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box; font-family: 'Raleway', sans-serif;;
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: hsl(216,100%,94%);
+        }
+        .center_div{
+            width: 300px;
+            height: 180px;
+            border-radius: 16px;
+            background: linear-gradient(to right top,#52b6fe,#6154fe);
+           padding: 30px;
+           position: relative;
+        }
+        .center_div .top_div{
+            width: 100%;display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            z-index: 2;
+
+
+        }
+        .center_div .top_div h1{
+            font-size: 30px;
+            text-align: right;
+            text-transform: uppercase;
+            z-index: 2;
+            
+
+        }
+        .center_div .top_div h2{
+            font-size:  14px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            z-index: 2;
+
+        }
+        .bottom_div p{
+            color:#fff;
+        }
+        .bottom_div h2{
+            font-size: 15px;
+            font-weight: 300;
+            text-transform: capitalize;
+            color:#dfe6e9;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .bottom_div {
+position: absolute;
+bottom: 20px;
+z-index: 3;
+
+        }
+        .center_div::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(0 0, 53% 0, 100% 0, 100% 70%, 100% 100%, 73% 55%, 44% 51%, 30% 15%);
+            /* background-color:rgba(1,4,64) ; */
+            border-radius: 16px;
+            background: linear-gradient(90deg,rgba(1,4,64,1) 4%,rgba(20,1,130,1) 24%,
+            rgba(39,5,185,0.9535962877030162) 51%,
+            rgba(0,104,255,1) 75%, rgba(5,145,184,1) 93%);
+            opacity: 0.4;
+        }
+        .center_div::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(0 0, 53% 0, 100% 0, 100% 70%, 100% 100%, 73% 55%, 44% 51%, 30% 15%);
+            /* background-color:rgba(1,4,64) ; */
+            border-radius: 16px;
+            background: linear-gradient(90deg,rgba(1,4,64,1) 4%,rgba(20,1,130,1) 24%,
+            rgba(39,5,185,0.9535962877030162) 51%,
+            rgba(0,104,255,1) 75%, rgba(5,145,184,1) 93%);
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <div class="top_div">
+                <h2>Credit</h2>
+                <h1>VISA</h1>
+            </div>
+            <div class="bottom_div">
+                <h2>Sahil Rajput</h2>
+                <p>5045-6537-4836-7364</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

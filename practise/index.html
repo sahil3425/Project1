@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #animContainer{
+            max-width: 50vw;
+            height: auto;
+           
+            
+
+        }
+        html, body {
+
+  width: 100%;
+  height:100%;
+  margin: 0;
+  background-color: lightgray;
+  overflow: hidden;
+ 
+}
+.conatainer{
+    position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url('/mb.jpg');
+  width: 1200px;
+  height: 800px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  width: 100vw;
+  height:100vh;
+}
+
+    </style>
+</head>
+<body>
+   
+  <div class="conatainer">
+    <div id="animContainer"> </div>
+  </div>
+  <!-- Scripts -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script> <!-- path of bodymovin library-->
+  <script  src="script.js"></script>
+</body>
+</html>

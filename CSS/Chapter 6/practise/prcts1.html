@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0;margin: 0;
+    }
+    #progress{
+        height: 3px;
+       
+        width:10vw;
+        background-color: red;
+        transition-property: width;
+        transition-timing-function: ease-in-out;
+        transition-duration: 1s;
+        /* transition-delay:2s; */
+    
+    }
+
+    #navbar{
+        background-color: aqua;
+        height: 20vh;
+        width: 100vw;
+
+    }
+    .mains{
+
+background-color: rgb(99, 65, 4);
+        height: 80vh;
+        width: 100vw;
+    }
+    img{
+        width: 122px;;
+        
+        animation: reverse 3sec ease-in  3 ;
+
+    }
+    
+</style>
+</head>
+<body>
+    <div id="progress" style="width: 10vw;"></div>
+    <nav id="navbar"></nav>
+    <div class="mains">
+        <img src="/Chapter 8/dragon.png" alt="" class="image">
+    </div>
+    
+    
+</body>
+<script>
+    
+    window.onload = vr;
+    function vr(){
+        progress.style.width='100vw';
+
+    }
+   
+</script>
+</html>

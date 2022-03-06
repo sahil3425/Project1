@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Dimensions</title>
+    <style>
+        .container{
+            margin: auto;
+            background-color: azure;
+            border: 5px solid black;
+            height: 50vh;
+            width: 70vw;
+        }
+        .button{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .width,.height{
+            width: 30vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" ></div>
+    <br>
+    <div class="button">
+    <button id="showwidthheight" class="buttons"> Check</button><br>
+    <input type="text" name="width" class="width">
+    <input type="text" name="height" class="height">
+</div>
+<script>
+    $(document).ready(function(){
+        $('.buttons').click(function(){
+            var x="";
+            var y="";
+            x=x+ "The Width of div is : "+$('.container').width()+"px.";
+            y=y+"The Height of div is : "+$('.container').height()+"px.";
+            $('.width').val(x);
+            $('.height').val(y);
+
+
+
+        });
+
+    });
+</script>
+</body>
+</html>

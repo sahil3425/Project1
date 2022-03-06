@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      p{
+          text-align: center;
+      }
+      .grand_parent {
+        width: 100vw;
+        height: 100vh;
+        background: #dfe6e9;
+        color: #fff;
+      }
+      h1 {
+        font-size: 4rem;
+        padding: 50px 0;
+        text-align: center;
+        color: #000;
+      }
+      .parents {
+        width: 80vw;
+        height: auto;
+        margin: auto;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:  wrap;
+        
+      }
+      .child{
+          height: 200px;
+          background: cyan;
+          box-shadow: 0px 0px 20px black;
+          flex: 1 1 200px;
+          margin: 20px;
+      }
+      .child:first-child {
+        background: #ffbe76;
+      }
+      .child:last-child {
+        background: #ff7979;
+      }
+      @media (max-width: 760px) {
+        .grand_parent {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand_parent">
+      <h1>Services</h1>
+      <div class="parents">
+        <div class="child">
+          <p>Sahil Rajput</p>
+        </div>
+        <div class="child">
+          <p>Sahil Rajput</p>
+        </div>
+        <div class="child">
+          <p>Sahil Rajput</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

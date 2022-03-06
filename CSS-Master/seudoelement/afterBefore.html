@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --b-a-width:8vw;
+    --b-a-md-width:15vw;
+    --b-a-sm-width:20vw;
+}
+.after_before{
+    width: 100vw;
+    height: 100vh;
+    background: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    color:#fff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    position: relative;
+}
+/* h1::before{
+    content: "full stack developer";
+    display: block;
+}
+h1::after{
+    content: "Android developer";
+    display: block;
+} */
+h1::before{
+    content: "";
+    
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--b-a-width);
+    border-bottom: 5px solid black;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--b-a-width);
+    border-bottom: 5px solid black;
+
+
+}
+@media(max-width:768px){
+    h1::before{
+ 
+    width: var(--b-a-sm-width);
+    
+}
+h1::after{
+
+    width: var(--b-a-sm-width);
+ 
+
+
+}
+}
+    </style>
+</head>
+<body>
+    <div class="after_before">
+        <h1>Sahil Rajput</h1>
+    </div>
+</body>
+</html>

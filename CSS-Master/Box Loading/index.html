@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .center_loading{
+            width: 15rem;
+            height: 15rem;
+            position: relative;
+            /* background-color: ; */
+        }
+        .main_loading{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-color: hsl(206,21%,94%);
+            display: grid;
+            place-items: center;
+        }
+        span{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5rem;height: 5rem;
+            background-color: black;
+            animation:load 2s linear infinite;
+            box-shadow: 0px 6px 15px grey;
+        }
+        span:nth-child(2){
+            animation-delay: 0.67s;
+        }
+        span:nth-child(3){
+            animation-delay: 1.32s;
+        }
+        @keyframes load {
+            0%{
+                left: 0;top: 0;
+            }
+            12.5%{
+                left: 50%;
+                top:0;
+            }
+            25%{
+                left: 50%;
+                top:0;
+
+            }
+            37.5%{
+                top: 50%;
+                left:50%;
+            }
+            50%{
+                top: 50%;
+                left:50%;
+            }
+            62.5%{
+                top: 50%;
+                left:0%;
+            }
+            75%{
+                top: 50%;
+                left:0%;
+            }
+            87.5%{
+                left: 0;top: 0;
+            }
+            100%{
+                left: 0;top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main_loading">
+        <div class="center_loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</body>
+</html>

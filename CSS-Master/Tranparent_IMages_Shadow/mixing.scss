@@ -1,0 +1,10 @@
+@mixin commoncode($let,$case) {
+    letter-spacing: $let;
+    text-transform: $case;
+}
+@mixin flexprop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

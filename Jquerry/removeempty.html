@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#remove").click(function(){
+    $("p").remove(".test");
+  });
+
+  $("#empty").click(function(){
+    $("#div1").empty();
+  });
+});
+</script>
+<style>
+.test {
+  color: red;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+    <div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+        This is some text in the div.
+        <p>This is a paragraph in the div.</p>
+        <p>This is another paragraph in the div.</p>
+        
+        </div>
+        <br>
+        
+        <button id="empty">Empty the div element</button><br><br>
+
+<p>This is a paragraph.</p>
+<p class="test">This is another paragraph.</p>
+<p class="test">This is another paragraph.</p>
+
+<button id="remove">Remove all p elements with class="test"</button>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Focus And Blur</title>
+</head>
+<body>
+    <h2>focus() vs blur()</h2>
+    <input type="text" id="textbox">
+    <span id="showdata">Welcome</span>
+    <span id="showdataforblur">Take care</span>
+    <script>
+        $(document).ready(function(){
+            $('span').css("display",'none');
+            $('input').focus(function(){
+          $('#showdata').css("display",'inline').fadeOut(1000);
+            });
+            $('input').blur(function(){
+          $('#showdataforblur').css("display",'inline').fadeOut(1000);
+            });
+
+        });
+    </script>
+</body>
+</html>
